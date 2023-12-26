@@ -1,0 +1,7 @@
+1- Set the camera on fSpy
+2- Load the fSpy file on Blender
+3- Make the desired object visible, hide others
+4- Translate the camera and rotate/scale the object as desired
+5- Move the sun lamp and fine-tune the sky texture node
+7- Input dataset name, object name, and scene tag on the script
+8- Save the script and run from Blender
