@@ -1,4 +1,2 @@
-dataset/generator.blend filter=lfs diff=lfs merge=lfs -text
-
 *.py text eol=lf
 *.txt text eol=lf
