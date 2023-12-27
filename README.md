@@ -21,14 +21,11 @@ If you use this code, feel free to cite it with the following BibTeX:
 
 ## Code Structure
 The source code of this project can be found in the `src` directory. Within it, there are 4 separate sub-projects, as listed below. Each sub-project directory contains a separate README with the necessary specifics.
+
  - `docker`: contains the necessary scripts to create and run the Docker image used to train the network. This simplifies compatibility issues when training and testing our PyTorch code. For usage information, see our [Docker README](https://github.com/lvsn/shadowcompositing/blob/main/src/docker/README.md).
  - `network`: contains the main source code for the deep generative pipeline. For more information, see the [Network README](https://github.com/lvsn/shadowcompositing/blob/main/src/network/README.md).
-- `compositing`: contains demo examples of compositing two separate scenes (including the teaser image) as well as an animation example script (all image-based). There is also an example of how to render a scene that is suitable for our compositing code using Blender at `compositing/blender`. See **NOTE 1** for more information, as well as the [Compositing README](https://github.com/lvsn/shadowcompositing/blob/main/src/compositing/README.md).
-- `city_shadows`: contains the generation and post-processing code to re-create our (publicly available) synthetic dataset. See **NOTE 2** for more information, as well as the [CityShadows README](https://github.com/lvsn/shadowcompositing/blob/main/src/city_shadows/README.md).
-
-**NOTE 1:** All the camera and illumination inputs for our test-time `compositing` tutorials are achievable via quick manual annotation (by a user), instead of requiring pre-trained estimation networks as dependencies (though those can be used instead, replacing the manual annotation steps of the tutorial). [FSpy](https://fspy.io/) is used for camera alignment (together with its [Blender add-on](https://github.com/stuffmatic/fSpy-Blender)) and [Blender's sky nodes](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/sky.html) are used for lighting estimation. This approach simplifies the required setup for a user to experiment with our code.
-
-**NOTE 2:** Blender assets are not included specifically for our `city_shadows` code due to licensing limitations with [SceneCity](http://www.cgchan.com/). Nonetheless, all our generation scripts are provided and can be used directly by SceneCity license owners. We further hope the scripts can also be useful by themselves, as they contain multiple snippets of Python code for Blender and Cycles, which can facilitate the creation of varied synthetic datasets.
+- `compositing`: contains examples of compositing (including the teaser image) as well as an animation example. There is also an example of how to render a scene that is suitable for our compositing code using Blender at `compositing/blender`. See the [Compositing README](https://github.com/lvsn/shadowcompositing/blob/main/src/compositing/README.md) for more information.
+- `city_shadows`: contains the generation and post-processing code to re-create our (publicly available) synthetic dataset. See the [CityShadows README](https://github.com/lvsn/shadowcompositing/blob/main/src/city_shadows/README.md) for more information.
 
 For further questions, feel free to reach out using the previously-listed emails.
 

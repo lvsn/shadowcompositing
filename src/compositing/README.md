@@ -1,2 +1,2 @@
 # Compositing
-available soon
+**Note:** all the camera and illumination inputs for our test-time `compositing` tutorials are achievable via quick manual annotation (by a user), instead of requiring pre-trained estimation networks as dependencies (though those can be used instead, replacing the manual annotation steps of the tutorial). [FSpy](https://fspy.io/) is used for camera alignment (together with its [Blender add-on](https://github.com/stuffmatic/fSpy-Blender)) and [Blender's sky nodes](https://docs.blender.org/manual/en/latest/render/shader_nodes/textures/sky.html) are used for lighting estimation. This approach simplifies the required setup for a user to experiment with our code.
