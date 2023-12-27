@@ -18,6 +18,6 @@ docker run --gpus all --rm -it `
     --workdir /home/user/ --user user `
     --shm-size='16g' `
     --name 'shadow-compositing' `
-    -v '../../':/home/user/src/ `
-    -v '../../../rsc/':/home/user/rsc/ `
+    -v '../':/home/user/src/ `
+    -v '../../rsc/':/home/user/rsc/ `
     shadow-compositing:v1.0 /bin/bash
