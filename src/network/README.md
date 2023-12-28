@@ -1,5 +1,5 @@
 # Network
-This README assumes the user is running the provided Docker image (see our [Docker README](https://github.com/lvsn/shadowcompositing/blob/main/src/docker/README.md)) and that the necessary assets have been unpacked in the right relative location (see the Assets section of our [main README](https://github.com/lvsn/shadowcompositing/blob/main/README.md)).
+This README assumes the user is running the provided Docker image (see our [Docker README](https://github.com/lvsn/shadowcompositing/blob/main/src/docker/README.md)) and that the necessary assets have been unpacked in the right relative locations (see the Assets section of our [main README](https://github.com/lvsn/shadowcompositing/blob/main/README.md)).
 
 ## Training
 Our network can be trained using the `train.sh` script. Flags within the script can be set however the user wishes. For specifics, comments and notes within our scripts can be used as reference.
