@@ -1,6 +1,12 @@
 # Network
 This README assumes the user is running the provided Docker image (see our [Docker README](https://github.com/lvsn/shadowcompositing/blob/main/src/docker/README.md)) and that the necessary assets have been unpacked in the right relative locations (see the Assets section of our [main README](https://github.com/lvsn/shadowcompositing/blob/main/README.md)).
 
+Included with our assets are the following pre-trained models:
+- `main`: our proposed model as described in the main paper. This model can be used to most accurately reproduce our paper results.
+- `main_alt`: same as above, but trained with a slightly different chance of each augmentation type happening (more inclined toward *subset mask blending*). Depending on the background image used (considering the vast range of possible outdoor scenes found online), this model may perform slightly better or worse.
+- `gain_net`: baseline described in the paper which takes shadow detections as input. Can be used with MTMT's outputs (preferably without thresholding).
+- `comp_net`: baseline described in the paper which directly outputs a harmonized ground instead of predicting a gain map.
+
 ## Training
 Our network can be trained using the `train.sh` script. Flags within the script can be set however the user wishes. For specifics, comments and notes within our scripts can be used as reference.
 
