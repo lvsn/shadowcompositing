@@ -20,7 +20,7 @@ We further refer the user to a brief annotation and HDR compositing tutorial, du
 1. Using the `object_insertion.blend` file included in the `blender` directory of the `demo.zip` asset file, set up a 3D scene (or use the pre-made example).
 2. To render the layers correctly, open the `blender/run.py` script within Blender. Information such as objects to render and filepaths can be changed in `blender/save_annotation.py` outside of Blender, as long as `run.py` remains consistent, `save_annotation.py` is invoked by proxy.
 
-Our Blender projects use version 3.0.1. Future version compatibility is not guaranteed.
+Our Blender projects use [version 3.0.1](https://download.blender.org/release/Blender3.0/). Future version compatibility is not guaranteed.
 
 Here's an overview of the entire process in the two above sections:
 1. Set the camera in fSpy and load the fSpy file in Blender. Remember to use +Z as up in your annotation (more tips in the compositing tutorial linked above).
